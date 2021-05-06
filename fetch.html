@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="emails">
+               
+    </div>
+    <script>
+
+Promise.all([1, 3, 10].map(id => 
+  fetch(`https://reqres.in/api/users/${id}`,
+  {method:'GET'}).then(resp => resp.json())
+)).then( profile => {
+         console.log(profile)
+         info(profile)
+   
+}
+);
+
+var emailsList=document.querySelector('.emails');
+  let info=(uemail)=>{
+    for (i in uemail){
+            var list1=document.createElement('a');
+            list1.textContent=uemail[i].data.email;
+            list1.href="mailto:"+uemail[i].data.email;
+            emailsList.appendChild(list1)
+            var space=document.createElement("br")
+            emailsList.appendChild(space)
+             }
+
+            }
+
+       
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var str1 = 'ABC'
+      var str2 = 'BC';
+      var [op1,op2]=["",""]
+     
+function StringJoins(str1, str2) {
+         for (i of str1){
+             var flag=false;
+             for (j of str2){
+                if(i==j){
+                    flag=true
+                }
+             }
+             if(flag==false){
+                    op1+=i
+             }
+
+         }
+         console.log(op1)
+
+
+         for (i of str2){
+             var flag=false;
+             for (j of str1){
+               if(i==j) {
+                    flag=true
+               }
+             }
+             if(flag===false){
+                    op2+=i
+             }
+
+         }
+         console.log(op2)
+} 
+StringJoins(str1,str2)       
+      
+       </script>
+</body>
+</html>
