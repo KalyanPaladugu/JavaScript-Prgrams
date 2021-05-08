@@ -55,3 +55,6 @@ class Emploee {
 
 var emp=new Emploee("kalyan",23)
 console.log(emp.name)
+delete emp.name;
+delete emp['age']
+console.log(emp)
