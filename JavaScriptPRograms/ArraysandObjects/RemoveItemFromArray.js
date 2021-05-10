@@ -28,3 +28,6 @@ function removeItem(array,n){
     console.log(array)
 }
 removeItem([1,2,3,4,5],2)
+
+
+// https://www.tothenew.com/blog/javascript-splice-vs-slice/

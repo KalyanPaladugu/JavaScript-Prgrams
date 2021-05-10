@@ -4,17 +4,21 @@
 // 2.Use the Object.assign() method
 // 3.Use the JSON.stringify() and JSON.parse() methods
 
-
-// const person = {
-//     firstName: 'John',
-//     lastName: 'Doe'
-// };
+```
+const person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+```
 
 
 // // using spread ...
-// let p1 = {
-//     ...person
-// };
+```
+let p1 = {
+    ...person
+};
+
+```
 
 // // using  Object.assign() method
 // let p2 = Object.assign({}, person);
